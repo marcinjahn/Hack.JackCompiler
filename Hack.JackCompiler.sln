@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.JackCompiler.Lib", "Hack.JackCompiler.Lib\Hack.JackCompiler.Lib.csproj", "{DE9AC3A5-6C4A-4242-9BAF-76B86FF75590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.JackCompiler.Lib.Tests", "Hack.JackCompiler.Lib.Tests\Hack.JackCompiler.Lib.Tests.csproj", "{888E7B7E-75DE-412F-811B-93B72A91CA99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9AC3A5-6C4A-4242-9BAF-76B86FF75590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9AC3A5-6C4A-4242-9BAF-76B86FF75590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9AC3A5-6C4A-4242-9BAF-76B86FF75590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9AC3A5-6C4A-4242-9BAF-76B86FF75590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{888E7B7E-75DE-412F-811B-93B72A91CA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888E7B7E-75DE-412F-811B-93B72A91CA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888E7B7E-75DE-412F-811B-93B72A91CA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888E7B7E-75DE-412F-811B-93B72A91CA99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
