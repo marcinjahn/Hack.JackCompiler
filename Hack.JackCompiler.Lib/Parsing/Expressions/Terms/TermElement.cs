@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Expressions.Terms
 {
-    public class TermElement : ElementBase
+    public class TermElement : ElementWithChildren
     {
         public override IElement Add(IElement childElement)
         {

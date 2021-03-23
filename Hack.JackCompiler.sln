@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.JackCompiler.Lib.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.JackCompiler.CLI", "Hack.JackCompiler.CLI\Hack.JackCompiler.CLI.csproj", "{EAF1C4F5-2926-426D-8612-E0568B42F74E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hack.JackCompiler.XmlUtilities", "Hack.JackCompiler.XmlUtilities\Hack.JackCompiler.XmlUtilities.csproj", "{9B2470DA-1BC4-4F34-9973-3EFCE98509F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{EAF1C4F5-2926-426D-8612-E0568B42F74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF1C4F5-2926-426D-8612-E0568B42F74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF1C4F5-2926-426D-8612-E0568B42F74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2470DA-1BC4-4F34-9973-3EFCE98509F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2470DA-1BC4-4F34-9973-3EFCE98509F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2470DA-1BC4-4F34-9973-3EFCE98509F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2470DA-1BC4-4F34-9973-3EFCE98509F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

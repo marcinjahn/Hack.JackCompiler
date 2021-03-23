@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Hack.JackCompiler.Lib\Hack.JackCompiler.Lib.csproj" />
+      <ProjectReference Include="..\Hack.JackCompiler.XmlUtilities\Hack.JackCompiler.XmlUtilities.csproj" />
     </ItemGroup>
 
 </Project>

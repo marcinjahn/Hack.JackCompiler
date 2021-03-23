@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Expressions
 {
-    public class ExpressionElement : ElementBase
+    public class ExpressionElement : ElementWithChildren
     {
         
     }

@@ -9,17 +9,17 @@ namespace Hack.JackCompiler.Lib.Parsing.Terminal
         {
             Value = value ?? throw new ArgumentNullException(nameof(value));
         }
-
+        
         public string Value { get; set; }
         
         public IElement Add(IElement childElement)
         {
-            throw new System.InvalidOperationException("Keyword cannot have any children statements");
+            throw new InvalidOperationException("Keyword cannot have any children statements");
         }
 
         public IElement Add(IEnumerable<IElement> childStatements)
         {
-            throw new System.InvalidOperationException("Keyword cannot have any children statements");
+            throw new InvalidOperationException("Keyword cannot have any children statements");
         }
     }
 }

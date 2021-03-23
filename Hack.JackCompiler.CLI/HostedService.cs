@@ -3,6 +3,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using Hack.JackCompiler.Lib.Files;
+using Hack.JackCompiler.XmlUtilities;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 
@@ -45,7 +46,8 @@ namespace Hack.JackCompiler.CLI
         {
             var loader = _fileUtilsFactory.GetFileLoader(new FileInfo(_options.InputPath.FullName));
             var input = await loader.Load(stoppingToken);
-            _compiler.Compile(input);
+            var parseTree = _compiler.Compile(input);
+            var xml = parseTree.ToXml();
         }
 
         private void HandleDirectoryInput(CancellationToken stoppingToken)

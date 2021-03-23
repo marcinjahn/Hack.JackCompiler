@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Statements
 {
-    public class IfStatementElement : ElementBase
+    public class IfStatementElement : ElementWithChildren
     {
         public override IElement Add(IElement childElement)
         {

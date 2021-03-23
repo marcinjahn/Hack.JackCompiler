@@ -2,7 +2,7 @@ using Hack.JackCompiler.Lib.Parsing.Expressions;
 
 namespace Hack.JackCompiler.Lib.Parsing.Statements
 {
-    public class DoStatementElement : ElementBase
+    public class DoStatementElement : ElementWithChildren
     {
         public override IElement Add(IElement childElement)
         {

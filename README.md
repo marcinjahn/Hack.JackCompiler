@@ -8,12 +8,15 @@ into `.vm` (Hack Virtual Machine language) file(s).
 
 ## Projects
 
-The solution consists of 2 projects:
+The solution consists of 4 projects:
 
 - **Hack.JackCompiler.Lib** - all services and models that power the solution
 - **Hack.JackCompiler.Lib.Tests** - unit tests of a subset of classes that are
   included in *Hack.JackCompiler.Lib*
-- **Hack.JackCompiler.Lib** - a Console application that runs the `JackCompiler`,
+- **Hack.JackCompiler.XmlUtilities** - a class library that contains a
+  `SimpleXmlSerializer` to generate XML structure of Jack parse tree. It
+  contains an extension method `ToXml()` for `IElement`.
+- **Hack.JackCompiler.CLI** - a Console application that runs the `JackCompiler`,
   with proper input/output setup.
 
 The code is written in an object-oriented way, so various responsibilities of

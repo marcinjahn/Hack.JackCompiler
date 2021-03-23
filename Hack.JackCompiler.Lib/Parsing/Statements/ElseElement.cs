@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Statements
 {
-    public class ElseElement : ElementBase
+    public class ElseElement : ElementWithChildren
     {
     }
 }

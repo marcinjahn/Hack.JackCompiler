@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Expressions
 {
-    public class SubroutineCallElement : ElementBase
+    public class SubroutineCallElement : ElementWithChildren
     {
         
     }

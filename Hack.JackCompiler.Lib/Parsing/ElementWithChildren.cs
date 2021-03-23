@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Hack.JackCompiler.Lib.Parsing
 {
-    public abstract class ElementBase : IElement
+    public abstract class ElementWithChildren : IElement
     {
         public List<IElement> Elements { get; set; } = new();
         

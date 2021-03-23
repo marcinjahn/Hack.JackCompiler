@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Statements
 {
-    public class ReturnStatementElement : ElementBase
+    public class ReturnStatementElement : ElementWithChildren
     {
         
     }

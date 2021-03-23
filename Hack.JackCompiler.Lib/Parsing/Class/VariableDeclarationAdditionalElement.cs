@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Class
 {
-    public class VariableDeclarationAdditionalElement : ElementBase
+    public class VariableDeclarationAdditionalElement : ElementWithChildren
     {
         
     }

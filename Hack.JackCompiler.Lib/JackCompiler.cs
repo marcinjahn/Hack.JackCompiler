@@ -15,10 +15,11 @@ namespace Hack.JackCompiler.Lib
             _parser = parser ?? throw new ArgumentNullException(nameof(parser));
         }
 
-        public void Compile(string jackClass)
+        public IElement Compile(string jackClass)
         {
             var tokens = _tokenizer.Tokenize(jackClass);
             var parsedTree = _parser.Parse(tokens);
+            return parsedTree;
         }
     }
 }

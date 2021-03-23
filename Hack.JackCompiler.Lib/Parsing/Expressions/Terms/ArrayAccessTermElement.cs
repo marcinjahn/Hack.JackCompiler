@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Expressions.Terms
 {
-    public class ArrayAccessTermElement : ElementBase
+    public class ArrayAccessTermElement : ElementWithChildren
     {
         
     }

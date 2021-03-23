@@ -1,6 +1,6 @@
 namespace Hack.JackCompiler.Lib.Parsing.Subroutine
 {
-    public class ParameterListElement : ElementBase
+    public class ParameterListElement : ElementWithChildren
     {
         public override IElement Add(IElement childElement)
         {
