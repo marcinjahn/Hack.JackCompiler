@@ -1,0 +1,29 @@
+namespace Hack.JackCompiler.Lib.Parsing
+{
+    public enum ElementCategory
+    {
+        Class,
+        ClassVariableDeclaration,
+        AdditionalVariable,
+        ClassSubroutineDeclaration,
+        Type,
+        ParameterList,
+        SubroutineBody,
+        ParameterListAdditionalParameter,
+        SubroutineBodyVariableDeclaration,
+        LetStatement,
+        IfStatement,
+        WhileStatement,
+        DoStatement,
+        ReturnStatement,
+        ArrayAccessor,
+        ElseStatement,
+        SubroutineCall,
+        Expression,
+        Term,
+        AdditionalExpressionTerm,
+        ExpressionList,
+        ExpressionListAdditionalElement,
+        Statements
+    }
+}

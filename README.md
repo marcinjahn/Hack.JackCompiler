@@ -13,6 +13,8 @@ The solution consists of 2 projects:
 - **Hack.JackCompiler.Lib** - all services and models that power the solution
 - **Hack.JackCompiler.Lib.Tests** - unit tests of a subset of classes that are
   included in *Hack.JackCompiler.Lib*
+- **Hack.JackCompiler.Lib** - a Console application that runs the `JackCompiler`,
+  with proper input/output setup.
 
 The code is written in an object-oriented way, so various responsibilities of
 the solution are enclosed in their own classes.

@@ -20,6 +20,6 @@ namespace Hack.JackCompiler.Lib.JackConstants
         public static string LessThan => "<";
         public static string GreaterThan => ">";
         public static string Equal => "=";
-        public static string NonEqual => "~";
+        public static string Tilde => "~";
     }
 }

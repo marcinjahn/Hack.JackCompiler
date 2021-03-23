@@ -22,13 +22,24 @@ namespace Hack.JackCompiler.Lib.Tokenization
             var index = 0;
             while (index < jackClass.Length)
             {
+                var codeToTokenize = jackClass.Substring(index);
+                var foundMatch = false;
+                
                 foreach (var matcher in _matchers)
                 {
-                    var match = matcher.TryMatch(jackClass.Substring(index));
+                    var match = matcher.TryMatch(codeToTokenize);
                     if (!match.IsMatching) continue;
-            
+
+                    foundMatch = true;
                     result.Add(match.Token);
                     index += match.NextIndex;
+                    break;
+                }
+
+                if (!foundMatch)
+                {
+                    // TODO: Throw custom exception
+                    throw new Exception("The given code cannot be tokenized");
                 }
             }
 

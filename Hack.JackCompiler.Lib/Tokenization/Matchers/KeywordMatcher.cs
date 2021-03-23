@@ -9,13 +9,13 @@ namespace Hack.JackCompiler.Lib.Tokenization.Matchers
         public KeywordMatcher()
             : base(() =>
             {
-                var keywordProps = typeof(Keywords).GetProperties();
+                var keywordProps = typeof(Keywords).GetFields();
 
                 var keywords = keywordProps
                     .Select(keyword => (string) keyword.GetValue(null))
                     .ToList();
 
-                return $"^({string.Join('|', keywords)}) ";
+                return $"^({string.Join('|', keywords)})( |;)";
             })
         { }
 
@@ -23,8 +23,8 @@ namespace Hack.JackCompiler.Lib.Tokenization.Matchers
         {
             var value = match.Value;
             return MatchResult.CreateMatching(
-                new Token(value.TrimEnd(), TokenType.Keyword),
-                value.Length);
+                new Token(value.TrimEnd().TrimEnd(';'), TokenType.Keyword),
+                value.EndsWith(";") ? value.Length - 1 : value.Length);
         }
     }
 }
